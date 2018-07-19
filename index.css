@@ -1,0 +1,136 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Merienda', cursive; */
+    box-sizing: border-box;
+}
+
+.center-box{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.shadow{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.stats{
+    display: grid;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+}
+
+.stats h1{
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.life-base{
+    width: 80%;
+    height: 20px;
+    margin: 0 auto;
+    background-color: lightgray;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.life{
+    height: 100%;
+    transition: color 1s, width 0.2s;
+}
+
+.life-text{
+    color: white;
+    font-weight: 600;
+}
+
+.dead-text{
+    color: red;
+}
+
+.options{
+    display: grid;
+    grid-template-columns: 21.25% 21.25% 21.25% 21.25%;
+    grid-column-gap: 5%;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+.btn{
+    border-radius: 5px;
+    border: none;
+    height: 35px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.btn-attack{
+    background-color: red;
+    color: white;
+}
+
+.btn-special-attack{
+    background-color: orange;
+    color: white;
+}
+
+.btn-heal{
+    background-color: lightgreen;
+    color: white;
+}
+
+.btn-escape{
+    background-color: white;
+    color: black;
+}
+
+.btn-new{
+    width: 200px;
+    margin: 0 auto;
+    background-color: lightgreen;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.log{
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    list-style-type: none;
+}
+
+.log-entry{
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    white-space: nowrap;
+}
+
+.log-entry:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.log-player{
+    background-color: lightblue;
+    color: blue;
+}
+
+.log-monster{
+    background-color: lightcoral;
+    color: red;
+}
+
+.log-game{
+    background-color: lightgrey;
+    color: black;
+}
